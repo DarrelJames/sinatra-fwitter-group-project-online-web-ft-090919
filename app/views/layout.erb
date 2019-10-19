@@ -7,10 +7,12 @@
   <body>
 
     <div class="container">
-      <% if logged_in? %>        
+      <nav>
+        <% if logged_in? %>
         <a href="/tweets/new"> Create Tweet </a>
         <a href="/logout"> Log Out </a>
         <% end %>
+      </nav>
       <%= yield %>
     </div>
 
